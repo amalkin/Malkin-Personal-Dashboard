@@ -1,0 +1,48 @@
+<ion-view view-title="Campus" class="inner-page unic-bkg" cache-view="false">
+  <ion-content ng-controller="GmapCtrl" class="google-map-page">
+	<div class="row  responsive-sm responsive-md responsive-lg ">
+      
+      <div class="row " >
+          <div class="col-33">
+               <button class="button icon ion-location circle-size buttoncampusloc"></button>  <span class="campus-text">CAMPUS MAP</span>
+          </div>
+            
+        <div class="col-33">
+            <button class="button icon ion-navigate circle-size background-color-direction buttondirection" ng-click="opengmap()"></button>
+            <span class="campus-text">GET DIRECTIONS</span>
+        </div>
+            
+          <div class=" col-33 ">
+              <button class="button icon ion-android-call circle-size buttoncampusloc"></button>
+              <span class="campus-text"> CONTACT </span>
+          </div>
+      </div>
+    </div>
+	<div class="contact-detail">
+     	<div class="border-line"></div>
+     	<div class="contact-detailstxt">CONTACT DETAILS</div>
+     	<div class="ion-arrow-right-c rightarrow" ></div>
+     	<div class="border-line"></div>
+    </div>
+   
+   	<div id="map">
+   		
+   	</div>
+   	<div id="openmap">
+		<button class="button icon openmapbtn" ng-click="opengmap()">Open Campus Map 
+			<div class="ion-arrow-right-c arrowicon"></div>
+		</button>
+	</div>
+	 	
+	<!--</div>-->
+   	<div class="gallery-follow-css">
+     	<div class="gallery-css galley-css-padding">GALLERY</div>
+     	<div class="gallery-css follow-css-padding">FOLLOW</div>
+     	<div class="ion-social-instagram-outline instagram-css"></div>
+ 		<div class="border-line"></div>
+ 		<div class="image-css-gallery">
+ 			<img src="img/Gallery.png" alt="" height="100%" width="100%">
+ 		</div>
+    </div>
+  </ion-content>
+</ion-view>

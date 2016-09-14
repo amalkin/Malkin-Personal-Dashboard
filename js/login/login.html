@@ -1,0 +1,39 @@
+<ion-view view-title="" class="login-page" hide-nav-bar="true">
+  <ion-nav-bar class="bar-calm-900">
+    <ion-nav-back-button>
+    </ion-nav-back-button>
+  </ion-nav-bar>
+  <ion-content padding="true">
+    <div class="branding animated">
+      <img ng-src="img/uni-campus-logo.png">
+    </div>
+
+    <form name="myForm" ng-submit="doLogin(myForm.$valid)" class="login-form padding">
+      <h1>Login into your account</h1>
+      <div class="list">
+        <label class="item item-input item-icon-right" ng-class="{'active': emailFocus}">
+          <i class="icon ion-ios-email"></i>
+          <input type="email" autocapitalize="off" autocorrect="off" placeholder="Username" ng-model="loginData.email"
+                 ng-required="true" ng-focus="emailFocus=true" ng-blur="emailFocus=false">
+        </label>
+        <label class="item item-input item-icon-right" ng-class="{'active': passwordFocus}">
+          <i class="icon ion-ios-locked"></i>
+          <input type="password" placeholder="Password" ng-model="loginData.password" ng-required="true"
+                 ng-focus="passwordFocus=true" ng-blur="passwordFocus=false">
+        </label>
+        <label class="item">
+          <button class="button button-block button-dark icon-right ion-arrow-right-c" type="submit">Log in</button>
+        </label>
+      </div>
+      <ul class="list">
+        <li class="item">
+          <button class="button icon-right ion-arrow-right-c button-clear">Don't have an account? Sign Up</button>
+        </li>
+        <li class="item">
+          <button class="button icon-right ion-arrow-right-c button-clear">Forgot your password?</button>
+        </li>
+      </ul>
+    </form>
+  </ion-content>
+
+</ion-view>

@@ -1,0 +1,10 @@
+<div class="col chat-window ">
+    <div ng-repeat="data in messages"
+    ng-class="{other: data.userId != myId}"
+    class="messages">
+
+      <div class="message" >
+        <span>{{data.message.text }}</span> 
+      </div>
+    </div>
+ </div>

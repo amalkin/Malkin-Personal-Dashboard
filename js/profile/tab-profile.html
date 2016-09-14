@@ -1,0 +1,30 @@
+<ion-view view-title="My Profile" class="profile-page">
+  <ion-content>
+    <progress-bar max="100" progress="progress" percentage="false" phase="YOUR PROFILE IS % COMPLETED"></progress-bar>
+    <div class="profile-view">
+      <button class="button button-positive button-profile button-icon ion-ios-plus-empty" ng-click="showActionsheet()">
+        <img ng-src="{{profilePic}}">
+      </button>
+      <h1>Jenny Smith</h1>
+      <h2>Registered Guest</h2>
+    </div>
+    <ul class="list">
+      <li class="item">
+        Contact Details
+        <i class="icon ion-arrow-right-c"></i>
+      </li>
+      <li class="item">
+        About You
+        <i class="icon ion-arrow-right-c"></i>
+      </li>
+      <li class="item" ui-sref="tab.preferences">
+        Preferences
+        <i class="icon ion-arrow-right-c"></i>
+      </li>
+      <li class="item">
+        Log Out
+        <i class="icon ion-arrow-right-c"></i>
+      </li>
+    </ul>
+  </ion-content>
+</ion-view>

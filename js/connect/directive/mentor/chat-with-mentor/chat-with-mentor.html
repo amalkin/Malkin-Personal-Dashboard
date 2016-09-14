@@ -1,0 +1,49 @@
+<ion-view view-title="My Mentor" class="chat-view tab-connect" cache-view="false">
+  <ion-content class="row responsive-sm responsive-md responsive-lg" >
+  <div class="hRule"></div>
+
+   <div class="list col " >
+                <div class="row tab-connect item item-avatar">
+                    <div class="col col-10">
+                        <img class="avatar-image" src="{{mentor.avatar}}" />
+                    </div>
+                    <div class="col col-90">
+                        <h2 class="mentor-name">{{mentor.name}} <span class="ion-arrow-right-c arrow"></span></h2> 
+
+                        <p class="arrow">{{mentor.specialisation}}</p>
+                        <br/>
+                        <br/>
+                        <div class="icon-align">
+                          <a herf= "#"> <img  class ="contact-icon" src="img/phone.png" /> </a>
+                           <a herf= "#"> <img class ="contact-icon" src="img/message.png" /></a>
+                           <a herf= "#"> <img class ="contact-icon" src="img/email.png" /></a>
+                        </div>
+                    </div>
+                </div>
+    </div> 
+    <div class="col chat-window ">
+    <div ng-repeat="data in messages"
+    ng-class="{other: data.userId != myId}"
+    class="messages">
+
+      <div class="message" >
+        <span>{{data.message.text }}</span> 
+      </div>
+    </div>
+ </div>
+  </ion-content>
+
+  <ion-footer-bar keyboard-attach class=" item-input-inset typeBar ">
+  <i class="fa fa-camera-retro fa-2x cameraStyle" aria-hidden="true"></i>
+    <label class="item-input-wrapper textarea-style">
+      <input type="text" type="text" placeholder="Type your message" on-return="inserisci(newmessage);" ng-model="newmessage.text"/>
+    </label>
+    <button class=" button button-clear btnFont" ng-click="inserisci(newmessage)">SEND</button>
+
+  </ion-footer-bar > 
+
+</ion-view>
+
+
+
+

@@ -1,0 +1,25 @@
+[{
+	"id": "0",
+	"name": "Perry Johnson",
+	"specialisation": "MECHANICAL ENGINEERING",
+	"experience": "6 Semister",
+	"avatar": "img/perry.png",
+	"age": "28 years old",
+	"interest": "img/chat-intrest-icon.jpg"
+}, {
+	"id": "1",
+	"name": "Mike Summer",
+	"specialisation": "COMPUTER ENGINEERING",
+	"experience": "8 Semister",
+	"avatar": "img/mike.png",
+	"age": "25 years old",
+	"interest": "img/chat-intrest-icon.jpg"
+}, {
+	"id": "2",
+	"name": "Adam Doe",
+	"specialisation": "ELECTRICAL ENGINEERING",
+	"experience": "4 Semister",
+	"avatar": "img/adam.jpg",
+	"age": "32 years old",
+	"interest": "img/chat-intrest-icon.jpg"
+}]

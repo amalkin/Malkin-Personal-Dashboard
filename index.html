@@ -1,1 +1,101 @@
-Hello World from gh-pages
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+
+    <!-- compiled css output -->
+    <link href="css/ionic.app.css" rel="stylesheet">
+    <!--<link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="lib/fonts/font-awesome/font-awesome.min.css">-->
+    <!-- <link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.css"> -->
+
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/jquery-touch-events/index.js"></script>
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- Angular Formly-Form -->
+    <script src="lib/api-check/dist/api-check.js"></script>
+    <script src="lib/angular-formly/dist/formly.js"></script>
+    <script src="lib/angular-formly-templates-bootstrap/dist/angular-formly-templates-bootstrap.js"></script>
+
+    <!--Google Map-->
+    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+    <script src="lib/ngCordovaOauth/dist/ng-cordova-oauth.min.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+    <!--Twitter js-->
+    <script src="lib/ng-twitter-api/dist/ng-twitter-api.min.js"></script>
+    <script src="lib/sha1.js"></script>
+
+    <!-- Firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/states.js"></script>
+    <script src="js/mainCtrl.js"></script>
+    <script src="js/campus/googlemap/gmapCtrl.js"></script>
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyB6wl3NJBuqRFZcKCgJ3DfYHpdscik3UJM"></script>
+    <script src="js/login/controller.js"></script>
+    <script src="js/profile/controller.js"></script>
+
+
+    <!-- Instagram -->
+    <script src="js/connect/directive/instagram-feed/instagramFeed.js"></script>
+    <script src="js/connect/instagram/ionic-instagram-service.js"></script>
+
+    <!--Twitter-->
+    <script src="js/connect/directive/twitter-feed/twitterFeed.js"></script>
+    <script src="js/connect/twitter/ionic-twitter-service.js"></script>
+
+    <!-- Profile -->
+    <script src="js/profile/preferences/PreferencesController.js"></script>
+    <script src="js/profile/preferences/PreferencesService.js"></script>
+
+    <!-- Connect Screen -->
+    <script src="js/connect/ConnectController.js"></script>
+
+    <script src="js/common/directive/progress-bar/progressBar.js"></script>
+    <script src="js/connect/directive/mentor/chat-with-mentor/chatControllers.js"></script>
+    <script src="js/connect/directive/mentor/chat-with-mentor/chatDirective.js"></script>
+    <script src="js/connect/directive/mentor/chat-room/chatRoomControllers.js"></script>
+    <script src="js/connect/directive/mentor/chat-room/chatRoomServices.js"></script>
+    <script src="js/common/directive/checklist/checklist.js"></script>
+    <script src="js/common/services/authentication.js"></script>
+    <script src="js/common/services/camera.js"></script>
+    <script src="js/common/utils/ionic-utils.js"></script>
+
+
+   <link rel="manifest" href="/manifest.json">
+
+  </head>
+  <body ng-app="starter" ng-controller="MainCtrl">
+    <!--
+      The nav bar that will be updated as we navigate between views.
+    -->
+    <ion-nav-bar class="bar-dark" align-title="center">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+      <ion-nav-buttons side="right">
+        <button class="button button-icon button-clear ion-android-notifications" ui-sref="app.notifications">
+          <span class="badge badge-assertive" ng-show="notificationBadge>0">{{notificationBadge}}</span>
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <!--
+      The views will be rendered in the <ion-nav-view> directive below
+      Templates are in the /templates folder (but you could also
+      have templates inline in this html file if you'd like).
+    -->
+    <ion-nav-view></ion-nav-view>
+  </body>
+</html>

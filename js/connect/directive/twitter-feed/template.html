@@ -1,0 +1,44 @@
+<div ng-show="!tweet.valid" class="">
+  <div style="color: #87949b; text-align: center; padding: 15px 0px">
+    Please login to Twitter in Preference Tab.
+  </div>
+</div>
+ <div ng-repeat="entry in tweet.data">
+    <div ng-show="tweet.valid" class="instagram-feed">
+        <div class="list card">
+            <div class="item item-avatar">
+                <div class="left" style="margin-left: 12px;">
+                  <img ng-src="{{entry.user.profile_image_url}}" style="border-radius: 40px;width: 30%;">
+                  <span class="profile-username" style="position: absolute;top: 30px;padding-left: 10px;color: white;font-size: 15px;">{{entry.user.name}}</span>
+                </div>
+                <div class="right" style="margin-top: 5px;">
+                  <button class="button icon-left ion-social-twitter-outline upparcase trasparent" style="border: 1px solid;
+            }
+    border-radius: 29px; color: #87949b; font-size: 10px;"> Follow</button>
+                </div>
+            </div>
+            <div class="item item-body">
+                <!--<img class="full-image border-radius" src="{{feed.imageUrl}}">-->
+            </div>
+            <div class="item we-icon" href="#">
+                <i class="icon ion-ios-heart-outline"></i>
+                <i class="icon ion-ios-chatbubble-outline"></i>
+                <i class="icon ion-ios-redo"></i>
+                <i class="icon we-icon-right ion-android-more-horizontal"></i>
+            </div>
+            <div class="item we-icon">
+                <!--<i class="icon ion-ios-heart ion-icons-f20px"><span class="likes">{{feed.likesCount}} likes<span></i>-->
+            </div>
+            <div class="item we-icon">
+                <!--<div ng-show="{{feed.showCaption}}">-->
+                    <div>
+                    <i class="icon ion-ios-chatbubble ion-icons-f20px"><span class="comments" style="color:#56e0e9; font-size: 15px;">{{tweet.username}}</span><span class=" comments" style="color: #ebedee; font-size: 15px;">{{tweet.commentText}}</span></i>
+                </div>
+            </div>
+            <div class="item" style="color: #87949b">
+                {{correctTimestring(entry.created_at) | date:'medium'}}
+            </div>
+        </div>
+      <hr />
+    </div>
+</div>

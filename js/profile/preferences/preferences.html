@@ -1,0 +1,84 @@
+<ion-view view-title="Preferences" class="user-preferences">
+  <ion-content>
+    <form name="formTest">
+      <formly-form model="preferences.model" fields="preferences.fields" form="preferences.form" options="preferences.options">
+            <button class="button button-block button-reset" ng-click="resetForm();">
+              RESET APP
+            </button>
+      </formly-form>
+    </form>
+
+    <script type="text/ng-template" id="instagram.html">
+        <div class="list">
+          <div class="item-label">
+            <div class="" style="padding-left: 14px;">{{to.label}}</div>
+            <div class="item item-input-inset">
+              <label class="item-input-wrapper">
+                <input type="text" placeholder="{{to.placeholder}}" ng-model="model[options.key]">
+              </label>
+              <button class="button button-small" ng-click="btnClick()">
+                Connect
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- <pre ng-repeat="(key, val) in this">$scope.{{key}} = {{val | json}}</pre> -->
+    </script>
+    <script type="text/ng-template" id="twitter.html">
+      <div class="list">
+        <div class="item-label">
+          <div class="" style="padding-left: 14px;">{{to.labelClientId}}</div>
+          <div class="item item-input-inset">
+            <label class="item-input-wrapper">
+              <input type="text" placeholder="{{to.placeholderClientId}}" ng-model="model[to.twitterClientId]">
+            </label>
+          </div>
+        </div>
+        <div class="item-label">
+          <div class="" style="padding-left: 14px;">{{to.labelClientSecret}}</div>
+          <div class="item item-input-inset">
+            <label class="item-input-wrapper">
+              <input type="text" placeholder="{{to.placeholderClientSecret}}" ng-model="model[to.twitterClientSecret]">
+            </label>
+            <button class="button button-small" ng-click="btnClick()">
+              Connect
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- <pre ng-repeat="(key, val) in this">$scope.{{key}} = {{val | json}}</pre> -->
+    </script>
+
+    <script type="text/ng-template" id="customField.html">
+      <div class="list">
+        <div class="item-label">
+          <div class="" style="padding-left: 14px;">{{to.label}}</div>
+          <div class="item item-input-inset">
+            <label class="item-input-wrapper">
+              <input type="text" placeholder="{{to.placeholder}}" ng-model="model[options.key]">
+            </label>
+          </div>
+        </div>
+      </div>
+    </script>
+
+    <!-- <script type="text/ng-template" id="customField.html">
+      <div>
+        <div class="list">
+          <div class="item item-input-inset">
+            <label class="item-input-wrapper">
+              <input type="text" placeholder="{{to.placeholer}}" ng-model="model.options.key">
+            </label>
+            <button class="button button-small">
+              Connect
+            </button>
+          </div>
+        </div>
+      </div>
+      <pre ng-repeat="(key, val) in this">$scope.{{key}} = {{val | json}}</pre>
+    </script>
+    -->
+
+
+  </ion-content>
+</ion-view>

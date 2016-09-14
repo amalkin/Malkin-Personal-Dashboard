@@ -1,0 +1,58 @@
+<ion-view view-title="Connect" class="tab-connect">
+  <ion-content>
+    <ion-refresher pulling-text="Pull to refresh" on-refresh="doPullRefresh()">
+    </ion-refresher>
+    <div class="background">
+  <div class="row  responsive-sm responsive-md responsive-lg ">
+
+      <div class="row " >
+          <div class="col-33">
+            <a href="#/tab/mentor">
+              <img class="img-size" src="img/my-mentor-off.png" >  <span class="connect-text">MY MENTOR</span>
+            </a>
+          </div>
+
+        <div class="col-33">
+          <a href="#">
+            <img class="img-size" src="img/my-friends-off.png"> <span class="connect-text">FRIENDS</span>
+          </a>
+        </div>
+
+          <div class=" col-33 ">
+            <a href="#">
+              <img class="img-size" src="img/my-events-off.png"> <span class="connect-text"> EVENTS </span>
+            </a>
+          </div>
+      </div>
+    </div>
+
+    <div class="hRule"></div>
+
+    <div class="row  responsive-sm responsive-md responsive-lg ">
+
+      <div class="row " >
+          <div class="col-70">
+             <span class="connect-text">FOLLOW WE.UNI CAMPUS ON</span>
+
+          </div>
+
+        <div class="col-30">
+          <a href="">
+            <img class=" social-icons " src="img/social-icons.png">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hRule"></div>
+    <div class="explore">
+        <div class="bar-dark header ">
+          <div class="title text upparcase">Explore</div>
+        </div>
+      <hr />
+      <instagram-feed feed="filteredInstaJSON"></instagram-feed>
+      <br />
+      <twitter-feed tweet="home_timeline"></twitter-feed>
+    </div>
+  </ion-content>
+</ion-view>

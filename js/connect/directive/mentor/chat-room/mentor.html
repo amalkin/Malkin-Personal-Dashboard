@@ -1,0 +1,26 @@
+<ion-view view-title="My Mentor" class="tab-connect">
+    <ion-content class="chat-room">
+        <div class="header"> PLEASE CHOOSE YOUR MENTOR</div>
+            <div class="list" ng-repeat="mentor in mentors" >
+                <div class=" row tab-connect item item-avatar">
+                    <div class="col col-30">
+                        <img class="avatar-image" src="{{mentor.avatar}}" />
+                    </div>
+                    <div class="col col-70">
+                        <h2 class="mentor-name">{{mentor.name}}</h2>
+                        <p class="mentor-trade">{{mentor.specialisation}}</p>
+                        <p class="mentor-exp">{{mentor.experience}}</p>
+                        
+                        <p class="mentor-age">{{mentor.age}}</p>
+                        <p><img class="mentor-interest" src="{{mentor.interest}}" />
+                        </p>
+                      <!-- <button class="choose-btn" ng-click=go("/tab/mentor/{{mentor.id}}")> -->
+                      
+                      <button class="choose-btn" ng-click=showConfirm("/tab/mentor/{{mentor.id}}")> CHOOSE <span class="ion-arrow-right-c"/></button> 
+                       <span class="info-link">INFO <span class="ion-arrow-right-c"/> </span>
+                    </div>
+                </div>
+                <div class="hRule"></div>
+            </div>
+    </ion-content>
+</ion-view>
