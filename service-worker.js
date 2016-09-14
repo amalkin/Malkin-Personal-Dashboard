@@ -16,7 +16,7 @@ var dataCacheName = 'weEdu-v1';
 var cacheName = 'weEdu-final-1';
 var filesToCache = [
   '',
-  'js/app.js',
+  '/Malkin-Personal-Dashboard/js/app.js',
 'js/campus/googlemap',
 'js/campus/googlemap/gmapCtrl.js',
 'js/campus/tab-campus.html',
